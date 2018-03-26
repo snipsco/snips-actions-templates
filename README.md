@@ -14,6 +14,8 @@ Template files for snips actions
 Configuration has 2 types of values, the "safe" ones and the "sensitive" ones. Safe values are expected to be filled in in the generated ini. Sensitive ones should have an empty value, wich will be set by sam upon installation
 
 # python2 actions
+Templates located in `python2` folder
+
 Action expected to happen when installing the final folder (on device)
 - create a python2 virtualenv named `venv`
 - `pip install -r requirements.txt` inside of it
