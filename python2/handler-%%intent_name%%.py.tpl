@@ -11,7 +11,7 @@ def subscribe_intent_callback(hermes, intentMessage):
 
 
 def action_wrapper(hermes, intentMessage, conf):
-    %%action_code%%
+    %%action_code_python%%
 
 
 if __name__ == "__main__":
