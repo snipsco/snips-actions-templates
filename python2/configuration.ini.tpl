@@ -1,2 +1,2 @@
 # configuration keys for the actions
-%%configuration_map%%
+%%configuration_ini%%
