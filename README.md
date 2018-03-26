@@ -3,7 +3,7 @@ Template files for snips actions
 
 # Template place holders
  - `%%intent_name%%` : the name of the intent, this can have multiple values
- - `%%action_code_python%%` : the python code for the action, each line as to be prefixed with the same ammount of spaces as the place holder, these are assciated to a value of `%%intent_name%%`
+ - `%%action_code_python%%` : the python code for the action, each line as to be prefixed with the same ammount of spaces as the place holder, these are associated to a value of `%%intent_name%%`
  - `%%configuration_ini%%` : a key value map of the configuration in a ini compatible format, this should have a single value
 
 # File names
