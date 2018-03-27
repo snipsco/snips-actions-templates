@@ -11,12 +11,12 @@ Template files for snips actions
  - Files with placeholders in their name are to be present once per value of the place holder, this value is then used for when the place holder is used in the file
 
 # A word regarding configuration
-Configuration has 2 types of values, the "safe" ones and the "sensitive" ones. Safe values are expected to be filled in in the generated ini. Sensitive ones should have an empty value, wich will be set by sam upon installation
+Configuration has 2 types of values, the "safe" ones and the "sensitive" ones. Safe values are expected to be filled in the generated ini. Sensitive ones should have an empty value, wich will be set by sam upon installation
 
 # python2 actions
 Templates located in `python2` folder
 
-Action expected to happen when installing the final folder (on device)
+Actions expected to happen when installing the final folder (on device)
 - create a python2 virtualenv named `venv`
 - `pip install -r requirements.txt` inside of it
 - fill empty values in `configuration.ini`
