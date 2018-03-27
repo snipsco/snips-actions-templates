@@ -26,9 +26,15 @@
 
 ## Expected additionnal files dir in assitant.json
 ```
-assistant/snippets/<template_name>[/<user_name>]/<intent_name>.snippet
+assistant/snippets/<template_name>[/<user_name>]/<intent_name>.<action_index>.snippet
 assistant/snippets/config.ini
 ```
+with 
+
+ - `template_name`: name of the template
+ - `user_name`: name of the user who created the intent (`snips` in `snips:lightsOn`)
+ - `intent_name`: name of the the intent (`lightsOn` in `snips:lightsOn`)
+ - `action_index`: used to differenciate multiple actions for the same intent, starts at 0. 
 
 
 ### `config.ini` specs
