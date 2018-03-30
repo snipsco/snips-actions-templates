@@ -17,9 +17,9 @@
 ```
 {
 	"name":"", //same as folder
-	"language":"python",
+	"language":"PYTHON",
 	"prelude": "def intent_handler(hermes, conf, intentMessage)\n    \"\"\"hermes: protocol handler\n    conf: action configuration\n    intentMessage: detected intent\"\"\" ",
-        "postlude": "",
+     "postlude": "",
 
 }
 ```
