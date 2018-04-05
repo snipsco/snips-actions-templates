@@ -1,2 +1,3 @@
 # snips-actions-templates
-Template files for snips actions
+Template definition and engine for snips actions
+
