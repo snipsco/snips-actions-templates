@@ -1,0 +1,6 @@
+{
+  "name":"homeassistant",
+  "language":"PYTHON",
+  "prelude": "\"\"\"\nsnips_skill_slot_value = data.get('snips_skill_slot_value')\nservice_data = {'entity_id': 'snips_skill_slot_value' }\nhass.services.call('hass_component', 'hass_component_method', service_data, False)\"\"\"",
+  "postlude": ""
+}
