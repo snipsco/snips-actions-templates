@@ -1,0 +1,6 @@
+{
+  "name":"homeassistant",
+  "language":"PYTHON",
+  "prelude": "\"\"\"\n<intent_slot_name> = data.get('<intent_slot_name>')\nservice_data = {'entity_id': '<intent_slot_name>' }\nhass.services.call('<hass_component>', '<hass_component_method>', service_data, False)\"\"\"",
+  "postlude": ""
+}
