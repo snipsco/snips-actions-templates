@@ -8,7 +8,7 @@
  - Files with placeholders in their name are to be present once per value of the place holder, this value is then used for when the place holder is used in the file
 
 # Hass actions
-Templates located in `homeassistant` folder, they are in python3.
+Templates located in `homeassistant` folder, they are in python.
 
 Actions expected to happen when installing the final folder (on device)
 - move python code in the Hass `python_scripts` folder 

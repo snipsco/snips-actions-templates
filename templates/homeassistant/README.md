@@ -1,14 +1,15 @@
 # Generated Snips skill
 
-This is a genrated Home Assistant python script using the `snips-template` tool.
-You can use the hass object to call hass services, check https://www.home-assistant.io/components/python_script/
+This is a generated python script using the `snips-template` tool. It is supposed to be used by Home Assistant.
+It uses the `hass` object to call Home Assistant services, check https://www.home-assistant.io/components/python_script/
 
 ## Setup
 
 Once generated, those python scripts are meant to be copied in the `python_scripts` folder in Hass' configuration.
-Hass `configuration.yaml` needs to be updated to reflect this new scripts. Also the Snips component needs to be added to Hass. https://www.home-assistant.io/components/snips/
+Snips component needs to be added to Hass. https://www.home-assistant.io/components/snips/
+Hass `configuration.yaml` needs to be updated to have the intents point to the right python scripts.
 
-For instance, if you use Snips' Lights bundle, this is what your `configuration.yaml` will look like:
+For instance, if you use Snips' Lights bundle, this is what your `configuration.yaml` would look like:
 
 ```
 snips:
@@ -27,7 +28,8 @@ snips:
           data_template:
             house_room: "{{house_room}}"
 ```
-The `data_template` section is here to expose Snips' intents `slot_value` to the python script. Therefore you'll be able to write this in the python script:
+
+The `data_template` section is exposing Snips' intents `slot_value` to the python script. Therefore you'll be able to get slot values in the python script:
 `house_room = data.get('house_room')`
 
 ## Executables
