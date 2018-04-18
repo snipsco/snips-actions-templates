@@ -5,28 +5,38 @@ It uses the `hass` object to call Home Assistant services, check https://www.hom
 
 ## Setup
 
-Once generated, those python scripts are meant to be copied in the `python_scripts` folder in Hass' configuration.
-Snips component needs to be added to Hass. https://www.home-assistant.io/components/snips/
-Hass `configuration.yaml` needs to be updated to have the intents point to the right python scripts.
+Actions expected to happen when installing the final folder (on device)
+- move python code in the Hass `python_scripts` folder. Scripts name MUST be lowercased.
+- add `mqtt:` broker & port that Snips uses
+- add `python_script:` component
+- add `snips:` component to Hass configuration, see https://www.home-assistant.io/components/snips/
+- edit Hass' `configuration.yaml` to point to the scripts that were added.
 
-For instance, if you use Snips' Lights bundle, this is what your `configuration.yaml` would look like:
+For instance, if you use Snips' Smart lights bundle, this is what your `configuration.yaml` would look like:
 
 ```
-snips:
-  intents:
-    lightsTurnOnSet:
-      action:
-        - service: python_script.action-lightsturnonset-lights
-          data_template:
-            house_room: "{{ house_room }}"
-            number: "{{number}}"
-            unit: "{{unit}}"
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
 
-    lightsTurnOff:
-      action:
-        - service: python_script.action-lightsturnoff-lights
-          data_template:
-            house_room: "{{house_room}}"
+python_script:
+
+snips:
+
+intent_script:
+  lightsTurnOnSet:
+    action:
+      - service: python_script.action_lightsTurnOnSet_Smart_lights
+        data_template:
+          house_room: "{{ house_room }}"
+          number: "{{number}}"
+          unit: "{{unit}}"
+
+  lightsTurnOff:
+    action:
+      - service: python_script.action_lightsTurnOff_Smart_lights
+        data_template:
+          house_room: "{{house_room}}"
 ```
 
 The `data_template` section is exposing Snips' intents `slot_value` to the python script. Therefore you'll be able to get slot values in the python script:
@@ -34,6 +44,6 @@ The `data_template` section is exposing Snips' intents `slot_value` to the pytho
 
 ## Executables
 
-This dir contains a number of python executables named `action-*.py`.
+This dir contains a number of python executables named `action_*.py`.
 One such file is generated per intent supported. These are standalone
 executables and will be run by Hass when an intent is triggered.
