@@ -1,5 +1,5 @@
 # Snips skill specification
-The goal of this document is to explain de various things requiered in a snips skill.
+The goal of this document is to explain the various things requiered in a snips skill.
 
 A snips skill is a folder containing the code needed to handle intents generated from the snips platform. 
 
@@ -26,4 +26,6 @@ It is a good idea to include a `README` file explaing what the skill is doing, h
 ## `snips-template`
 
 The `snips-template` executable can be used generate such skill folders from snippets included by the console in `assistant.zip` files. Future version should include a `bootstrap` command to generate empty skill folders
+
+By default `snips-template` with generate one `action-` file per intent, but this is not something required by the spec (ie you can manage mulitple intents in the same executable if you want)
 
