@@ -26,8 +26,8 @@
 
 ## Expected additionnal files dir in assitant.json
 ```
-assistant/snippets/<skill_name>/<template_name>[/<user_name>]/<intent_name>.snippet
-assistant/snippets/<skill_name>/config.ini
+assistant/snippets[/<user_name>]/<skill_name>/<template_name>[/<user_name>]/<intent_name>.snippet
+assistant/snippets[/<user_name>]/<skill_name>/config.ini
 ```
 with 
 
