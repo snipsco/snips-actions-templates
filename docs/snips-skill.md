@@ -27,5 +27,5 @@ It is a good idea to include a `README` file explaining what the skill is doing,
 
 The `snips-template` executable can be used to generate such skill folders from snippets included by the console in `assistant.zip` files. Future version should include a `bootstrap` command to generate empty skill folders.
 
-By default `snips-template` with generate one `action-` file per intent, but this is not something required by the spec (ie you can manage mulitple intents in the same executable if you want)
+By default `snips-template` will generate one `action-` file per intent, but this is not something required by the spec (ie you can manage mulitple intents in the same executable if you want)
 
