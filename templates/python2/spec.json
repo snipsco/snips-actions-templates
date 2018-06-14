@@ -1,6 +1,6 @@
 {
   "name":"python2",
   "language":"PYTHON",
-  "prelude": "\"\"\" Write the body of the function that will be executed once the intent is recognized. \nIn your scope, you have the following objects : \n- intentMessage : an object that represents the recognized intent\n- hermes : an object with methods to communicate with the MQTT bus following the hermes protocol. \n- conf : a dictionary that holds the skills parameters you defined \n \nRefer to the documentation for further details. \n\"\"\" ",
+  "prelude": "\"\"\" Write the body of the function that will be executed once the intent is recognized. \nIn your scope, you have the following objects : \n- intentMessage : an object that represents the recognized intent\n- hermes : an object with methods to communicate with the MQTT bus following the hermes protocol. \n- conf : a dictionary that holds the skills parameters you defined. \n  To access global parameters use conf['global']['parameterName']. For end-user parameters use conf['secret']['parameterName'] \n \nRefer to the documentation for further details. \n\"\"\" ",
   "postlude": ""
 }
