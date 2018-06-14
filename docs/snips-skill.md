@@ -11,7 +11,7 @@ The skill server expects files named `action-*` to be at the root of the folder.
 
 Each of these executable will be started by the skill server (and restarted in case the process exits/cashes). 
 
-If a subfolder named `venv` exists, the `snips-skills-server` will try to activate the virtualenv before starting the executables (ie sourcing `venv/bin/activate` before starting the executable). This can be used to easily install dependencies for a pyhton script.
+If a subfolder named `venv` exists, the `snips-skill-server` will try to activate the virtualenv before starting the executables (ie sourcing `venv/bin/activate` before starting the executable). This can be used to easily install dependencies for a pyhton script.
 
 Any other file or folder is ignored by the `snips-skill-server`
 
