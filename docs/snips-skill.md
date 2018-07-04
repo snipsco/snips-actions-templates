@@ -3,7 +3,7 @@ The goal of this document is to explain the various things required in a snips s
 
 A snips skill is a folder containing the code needed to handle intents generated from the snips platform. 
 
-This folder is given to the snips-skills-server that will ensure the skill is running.
+This folder is given to the `snips-skill-server` that will ensure the skill is running.
 
 ## Files required by the skill server
 
@@ -19,7 +19,7 @@ Any other file or folder is ignored by the `snips-skill-server`
 
 By convention any configuration needed to be done before running should be done in a script named `setup.sh`. `sam` will automatically launch such a script upon install of a skill. If not using `sam` the user should launch it by hand. The rights required to run this script should be only write access to the skill dir, this script should not be used to install systemwide dependencies, and just be used to for example setup a python virtualenv or compile some source files.
 
-By convention also, actions files should read there configuration in a file named `config.ini`. A section `secret` should be used for parameters that are sensitive (passwords / api keys...)
+By convention also, actions files should read there configuration in a file named `config.ini`. A section `secret` should be used for parameters that are sensitive (passwords / api keys...). For all other data, you can use a `global` section
 
 It is a good idea to include a `README` file explaining what the skill is doing, how to configure it, etc.
 

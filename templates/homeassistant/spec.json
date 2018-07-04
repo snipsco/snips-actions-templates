@@ -1,6 +1,6 @@
 {
   "name":"homeassistant",
   "language":"PYTHON",
-  "prelude": "\"\"\"\n<intent_slot_name> = data.get('<intent_slot_name>')\nservice_data = {'entity_id': '<intent_slot_name>' }\nhass.services.call('<hass_component>', '<hass_component_method>', service_data, False)\"\"\"",
+  "prelude": "\"\"\"\n For the Home Assistant integration to work, you need to write code to bind the Snips intents slots & values to Home Assistant components. This code will be copied by Sam to Hass' python_script folder\n Here is a template you can use :\n\n<intent_slot_name> = data.get('<intent_slot_name>')\nservice_data = {'entity_id': '<intent_slot_name>' }\nhass.services.call('<hass_component>', '<hass_component_method>', service_data, False)\n\nRefer to the documentation for further details. \nhttps://snips.gitbook.io/documentation/console/actions/home-assistant\nhttps://www.home-assistant.io/components/python_script/\"\"\"",
   "postlude": ""
 }
