@@ -1,6 +1,6 @@
 # Generated Snips skill
 
-This is a generated Python 2 snips app using the `snips-template` tool.
+This is a generated Python 3 snips app, using the `snips-template` tool.
 It is compatible with the format expected by the `snips-skill-server`
 
 ## Setup

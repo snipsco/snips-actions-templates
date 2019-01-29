@@ -24,7 +24,7 @@
 }
 ```
 
-## Expected additionnal files dir in assitant.json
+## Expected additional files dir in assistant.json
 ```
 assistant/snippets/<skill_name>/<template_name>[/<user_name>]/<intent_name>.snippet
 assistant/snippets/<skill_name>/config.ini
