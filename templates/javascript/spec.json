@@ -1,0 +1,6 @@
+{
+    "name":"javascript",
+    "language":"JAVASCRIPT",
+    "prelude": "/*\n    Your action code will be wrapped inside a function with the following signature:\n\n    function(message, flow, config) { /* action code */ }\n\n    Where:\n        - 'message' is the intent message object\n        - 'flow' is the hermes-javascript flow object (see: https://github.com/snipsco/hermes-protocol/tree/develop/platforms/hermes-javascript#dialogflow for mode details)\n        - 'config' is an object containing your App parameters\n            `config.global.parameterName` or `config.secret.secretParameterName`\n*/\n",
+    "postlude": ""
+}
