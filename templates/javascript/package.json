@@ -3,7 +3,7 @@
     "description": "Auto-generated snips action template.",
     "version": "0.0.1",
     "dependencies": {
-      "hermes-javascript": "^0.1.0",
+      "hermes-javascript": "^0.3.7",
       "ini": "^1.3.5"
     }
 }
