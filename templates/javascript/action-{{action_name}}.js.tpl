@@ -10,11 +10,12 @@ const config = ini.parse(configFile)
 withHermes((hermes, done) => {
     try {
         const dialog = hermes.dialog()
-
-        dialog.flow('intent/{{intent_id}}', async (message, flow) => {
-            {{#each action_code as |a|}}
-            {{a}}
-            {{/each}}
+        dialog.flow('{{intent_id}}', (message, flow) => {
+            return (async function(message, flow, config) {
+                {{#each action_code as |a|}}
+                {{a}}
+                {{/each}}
+            })(message, flow, config)
         })
     } catch (error) {
         console.error(error.toString())
